@@ -1,0 +1,231 @@
+/* style.css */
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    /* Estilos para telas menores que 768px de largura */
+}
+
+@media (max-width: 480px) {
+    /* Estilos para telas menores que 480px de largura */
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+    display: flex; /* Define o layout flexível para organizar os elementos verticalmente */
+    flex-direction: column; /* Define a direção da organização como uma coluna */
+    min-height: 100vh; /* Garante que o corpo tenha no mínimo 100% da altura da viewport (tela) */
+    background: url('imagens/sep09.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: #e6e6e6; /* Cor de fundo das seções */
+    padding: 10px 0;
+}
+
+/*Estilização do menu central*/
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: larger;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 24px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: color 0.3s; /* Efeito de transição suave na cor ao passar o mouse */
+}
+
+nav a:hover {
+    color: #3d718b; /* Cor alterada ao passar o mouse */
+}
+
+
+/* Estilização do conteudo central do pagina*/
+main {
+    flex: 1;
+    padding-top: 42px;
+    padding-left: 92px;
+    padding-right: 92px;
+    padding-bottom: 42px;
+}
+
+/* Estilizando a imagem de perfil em formato circular */
+.profile-image {
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 50%; /* Define a forma circular */
+    margin: 0 auto;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilizando os contêineres das seções "Sobre Mim" e "Formação" */
+.ContainerS {
+    background-color: #e6e6e6; /* Cor de fundo das seções */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilizando os títulos das seções */
+.ContainerS h2 {
+    font-size: 24px;
+    margin-top: 0;
+    color: #333;
+}
+
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilizando a linha de divisão para uma melhor compreensao dos conteudos */
+.divisao {
+    border-top: 1px solid #0f0d0d;
+    margin: 20px 0;
+}
+
+
+p {
+        padding-left: 14px;
+        padding-right: 14px;
+        text-align: justify;
+        margin-bottom: 20px;
+    
+}
+
+/* Estilizando os itens do portfólio */
+.portfolio-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding-top: 44px;
+    margin: 10px;
+    margin-left: 330px;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centralize o texto horizontalmente */
+    display: grid;
+    place-items: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.desc{
+    text-align: justify;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.divi {
+    border-top: 1px solid #0f0d0d;
+    margin: 20px 0;}
+
+/* Estilizando o contêiner de vídeo */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centralize o vídeo verticalmente */
+    height: 400px; /* Defina uma altura para o contêiner do vídeo */
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 100%;
+}
+
+.portfolio-item h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+/* Estilizando a div do formulario */
+.container { 
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.formulario {/* Estilizando o formulario */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilizando o testo dos campos email e nome */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea { /* altura do texto */
+    height: 150px;
+}
+
+input[type="submit"] { /* Estilizando o enviar */
+    background: #0078d4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {/* colocando um efeito de escurecimento do botão enviar */
+    background: #020406;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e6e6e6;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
